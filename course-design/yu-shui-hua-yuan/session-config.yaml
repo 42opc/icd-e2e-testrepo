@@ -41,40 +41,40 @@ class_info:
 expert_roster_draft:
   domain_experts:
     - role: 生态水文学研究员
-      perspective: 从雨水生态系统与水文循环视角审视课程设计
-      thinking_style: 系统性 + 数据驱动
-      personality: 严谨、深度
-      working_style: 基于实证研究提供建议
+      perspective: 雨水生态系统与水文循环；城市雨水渗-滞-径流机制及生态服务功能
+      thinking_style: 系统性 + 数据驱动；水文模型为推导工具，重视量化指标与因果链
+      personality: 严谨、深度；要求实证支撑，不接受缺乏数据的设计方案
+      working_style: 先量化水文条件（汇水面积/坡度/土壤渗透系数），再基于实证数据提供建议
       participation: core
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.cnki.net/research/ecology-hydrology-primary-education"
+      inference_basis: "https://eco.sysu.edu.cn/en/teachers/Associate-Professor"
 
     - role: 城市生态设计师
-      perspective: 从可持续城市设计与绿色基础设施视角提供指导
-      thinking_style: 跨学科 + 实践导向
-      personality: 创新、务实
-      working_style: 以真实项目案例辅助教学设计
+      perspective: 绿色基础设施与雨水花园；关注"渗-滞-蓄-净-用-排"功能整合
+      thinking_style: 跨学科 + 实践导向；水文学与景观生态学结合
+      personality: 创新、务实；善用真实工程案例，注重低成本可操作性
+      working_style: 场地适宜性评估→植物群落配置→水文设施设计，三步推进
       participation: core
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.sciencedirect.com/urban-ecology-education-design"
+      inference_basis: "https://zhuanlan.zhihu.com/p/563560379"
 
     - role: 小学科学教育研究者
-      perspective: 从儿童认知发展与探究式学习视角优化课程逻辑
-      thinking_style: 发展心理学 + 课程论
-      personality: 耐心、细致
-      working_style: 以学习理论框架支撑教学设计
+      perspective: 儿童认知发展与探究式学习；课程逻辑从学习者认知起点出发
+      thinking_style: 发展心理学 + 课程论；真实问题驱动→探究→迁移应用路径
+      personality: 耐心、细致；注重学习者认知起点，反对超学段抽象灌输
+      working_style: 先分析学情迷思概念，再以学习理论框架支撑活动序列设计
       participation: core
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.edu.cn/primary-science-inquiry-research"
+      inference_basis: "https://www.eduhk.hk/apfslt/download/v7_issue1_files/sowm_gb.pdf"
 
     - role: 环境工程师
-      perspective: 从工程实践与环境影响评估视角支持项目可行性
-      thinking_style: 工程思维 + 问题解决
-      personality: 踏实、目标导向
-      working_style: 提供技术可行性分析与安全评估
+      perspective: 工程实践与环境影响评估；关注安全性与技术约束边界
+      thinking_style: 工程思维 + 问题解决；目标→约束→方案→评估循环
+      personality: 踏实、目标导向；重视技术可行性与风险控制
+      working_style: 提供技术可行性分析与安全评估，确保实践活动安全可行
       participation: crossover
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.environmental-engineering-edu.org/primary-stem"
+      inference_basis: "https://jky.jlipedu.cn/upload/file/20240718/35e62b8a60ba4c8b9fb02d55ecc22e13.pdf"
 
   subject_teachers:
     - subject: 科学
@@ -84,12 +84,15 @@ expert_roster_draft:
         - 科学探究
         - 生命科学
         - 地球与宇宙
+      teaching_concern: 观察-提问-实验探究循环；真实情境与学科概念联结
+      subject_principle: 2022 版课标"素养导向、实践为要"；以探究活动为主要学习方式
       spawn_prompt: >
-        你是二年级科学学科专家教师,重点关注科学探究能力培养。
-        inference_basis: 2022 版小学科学课标 P.12 核心素养框架
-        请审查本单元设计是否符合二年级学生认知发展水平。
+        你是科学学科专家教师，核心素养关注科学探究、生命科学与地球和宇宙领域。
+        教学关切：引导学生通过观察-提问-实验探究循环建立科学思维，关注真实情境与学科概念联结。
+        学科原则：遵循2022版科学课标"素养导向、实践为要"，以探究活动为主要学习方式。
+        请审查课程单元设计是否符合学段学生认知发展水平与课标要求。
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/science-curriculum-2022"
+      inference_basis: "datapack:subject-teacher-competency-2012-2022"
 
     - subject: 数学
       grade: 二年级
@@ -97,12 +100,15 @@ expert_roster_draft:
       core_competencies:
         - 数据分析
         - 量感与测量
+      teaching_concern: 真实测量情境发展量感；数学与跨学科项目数据收集整合
+      subject_principle: 2022 版课标"量感"核心概念；数学学习须嵌入真实应用情境
       spawn_prompt: >
-        你是二年级数学学科专家教师,重点关注数学与实际情境的整合。
-        inference_basis: 2022 版小学数学课标 P.8 量感核心概念
-        请评估雨水花园项目中的测量与数据收集活动是否适合二年级学生。
+        你是数学学科专家教师，核心素养关注数据分析与量感培养。
+        教学关切：在真实测量情境中发展学生量感，关注数学与跨学科项目数据收集整合。
+        学科原则：遵循2022版数学课标"量感"核心概念，数学学习须嵌入真实应用情境。
+        请评估课程中测量与数据收集活动是否适合学段学生。
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/math-curriculum-2022"
+      inference_basis: "datapack:subject-teacher-competency-2012-2022"
 
     - subject: 综合实践活动
       grade: 二年级
@@ -111,9 +117,12 @@ expert_roster_draft:
         - 考察探究
         - 社会服务
         - 设计制作
+      teaching_concern: 真实项目情境中学生自主探究与动手实践；学生与校园环境联结
+      subject_principle: 2017 版综合实践活动课程指南；探究-实践-反思三位一体
       spawn_prompt: >
-        你是综合实践活动学科专家教师,专注于真实情境中的项目式学习。
-        inference_basis: 2017 版综合实践活动课程指南 P.15 探究活动设计
-        请审查项目中学生动手实践与社区联系的设计是否合理。
+        你是综合实践活动学科专家教师，核心素养关注考察探究、社会服务与设计制作。
+        教学关切：在真实项目情境中支持学生自主探究与动手实践，关注学生与校园和社区环境联结。
+        学科原则：遵循2017版综合实践活动课程指南，以真实项目为载体，强调探究-实践-反思三位一体。
+        请审查项目中学生动手实践与环境联系的设计是否合理。
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/comprehensive-practice-guide-2017"
+      inference_basis: "datapack:subject-teacher-competency-2012-2022"
