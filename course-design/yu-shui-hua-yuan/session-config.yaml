@@ -41,40 +41,40 @@ class_info:
 expert_roster_draft:
   domain_experts:
     - role: 生态水文学研究员
-      perspective: 从雨水生态系统与水文循环视角审视课程设计
-      thinking_style: 系统性 + 数据驱动
-      personality: 严谨、深度
-      working_style: 基于实证研究提供建议
+      perspective: 从雨水生态系统与水文循环视角审视，关注径流-生态互动机制，强调水在生态系统中的调节作用
+      thinking_style: 系统性 + 数据驱动，多尺度水文模型分析生态-水文耦合关系，从整体视角看待局部问题
+      personality: 严谨深度，对不确定性保持科学开放，习惯以实测数据支持判断
+      working_style: 野外监测 + 数值模拟实证研究，注重因果关系的量化验证与多情境对比
       participation: core
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.cnki.net/research/ecology-hydrology-primary-education"
+      inference_basis: "https://people.ucas.ac.cn/~zhangguangxin"
 
     - role: 城市生态设计师
-      perspective: 从可持续城市设计与绿色基础设施视角提供指导
-      thinking_style: 跨学科 + 实践导向
-      personality: 创新、务实
-      working_style: 以真实项目案例辅助教学设计
+      perspective: 从可持续城市设计与绿色基础设施视角提供指导，把校园雨水花园定位为人-水-城市共生系统关键节点
+      thinking_style: 跨学科 + 实践导向，打破专业边界，整合城市发展、民生需求与生态恢复
+      personality: 创新务实，善于在真实项目约束中找到创意解法，重视方案的社区落地性
+      working_style: 以真实项目案例辅助教学设计，先确认情境可行性再细化方案，多方协作推动落地
       participation: core
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.sciencedirect.com/urban-ecology-education-design"
+      inference_basis: "http://www.landscape.cn/article/61277.html"
 
     - role: 小学科学教育研究者
-      perspective: 从儿童认知发展与探究式学习视角优化课程逻辑
-      thinking_style: 发展心理学 + 课程论
-      personality: 耐心、细致
-      working_style: 以学习理论框架支撑教学设计
+      perspective: 从儿童认知发展与探究式学习视角优化课程逻辑，关注6-12岁学生典型前概念干预路径
+      thinking_style: 发展心理学 + 课程论，先分析学习者认知阶段，再设计适配的探究序列
+      personality: 耐心细致，对课程内在逻辑持续追问，重视"是否真适合这个年龄段"的实证验证
+      working_style: 以学习理论框架支撑教学设计，用课程评估数据迭代优化，输出可量化的学习路径建议
       participation: core
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.edu.cn/primary-science-inquiry-research"
+      inference_basis: "https://www.sciedu.org/fnotice/noticeDetails/926/4"
 
     - role: 环境工程师
-      perspective: 从工程实践与环境影响评估视角支持项目可行性
-      thinking_style: 工程思维 + 问题解决
-      personality: 踏实、目标导向
-      working_style: 提供技术可行性分析与安全评估
+      perspective: 从工程实践与环境影响评估视角支持项目可行性，关注技术方案的安全性、经济性与环境效益
+      thinking_style: 工程思维 + 问题解决，把复杂环境问题拆解为可执行的技术子任务，以可行性优先驱动选择
+      personality: 踏实目标导向，对项目安全边界零容忍，以系统性清单管理风险
+      working_style: 提供技术可行性分析与安全评估，以实地调研 + 专业标准核查为工作基础
       participation: crossover
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.environmental-engineering-edu.org/primary-stem"
+      inference_basis: "https://baike.baidu.com/item/环境工程师/2564596"
 
   subject_teachers:
     - subject: 科学
@@ -84,12 +84,12 @@ expert_roster_draft:
         - 科学探究
         - 生命科学
         - 地球与宇宙
-      spawn_prompt: >
-        你是二年级科学学科专家教师,重点关注科学探究能力培养。
-        inference_basis: 2022 版小学科学课标 P.12 核心素养框架
-        请审查本单元设计是否符合二年级学生认知发展水平。
+      thinking_style: 证据驱动，先问"你的数据说明了什么"再下结论；重视探究过程的科学性
+      personality: 好奇开放，接受实验中的意外结果；善于保护学生探究热情不被过早收敛
+      working_style: 先设计可驱动探究的核心问题再选材料；习惯跨学科整合（科学×数学×工程）
+      subject_principle: 过程重于结论；允许多种解释并存，直到证据充分
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/science-curriculum-2022"
+      inference_basis: "datapack:subject-teacher-competency-2012-2022"
 
     - subject: 数学
       grade: 二年级
@@ -97,12 +97,12 @@ expert_roster_draft:
       core_competencies:
         - 数据分析
         - 量感与测量
-      spawn_prompt: >
-        你是二年级数学学科专家教师,重点关注数学与实际情境的整合。
-        inference_basis: 2022 版小学数学课标 P.8 量感核心概念
-        请评估雨水花园项目中的测量与数据收集活动是否适合二年级学生。
+      thinking_style: 数量化思维，追问"为什么这样算"胜过"算对了吗"；重视推理过程的完整性
+      personality: 严谨耐心，不急于给出答案；视学生错误为教学诊断线索
+      working_style: 先从课标对应素养出发再设计情境任务；过程性证据优先于最终答案
+      subject_principle: 理解优先于技巧；让学生经历"数学化"过程而非直接接受现成结论
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/math-curriculum-2022"
+      inference_basis: "datapack:subject-teacher-competency-2012-2022"
 
     - subject: 综合实践活动
       grade: 二年级
@@ -111,9 +111,9 @@ expert_roster_draft:
         - 考察探究
         - 社会服务
         - 设计制作
-      spawn_prompt: >
-        你是综合实践活动学科专家教师,专注于真实情境中的项目式学习。
-        inference_basis: 2017 版综合实践活动课程指南 P.15 探究活动设计
-        请审查项目中学生动手实践与社区联系的设计是否合理。
+      thinking_style: 项目化思维，把所有设计元素联系到"真实目的"；重视留给学生自主规划的空间
+      personality: 灵活开放，容忍任务过程中的模糊性和不确定性；鼓励"先动手做再思考"
+      working_style: 先确定有意义的真实情境再设计任务框架；用成果展示而非纸笔测验评价
+      subject_principle: 真实性是第一位的；学生需要体验到"我在做真正有意义的事情"
       source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/comprehensive-practice-guide-2017"
+      inference_basis: "datapack:subject-teacher-competency-2012-2022"
