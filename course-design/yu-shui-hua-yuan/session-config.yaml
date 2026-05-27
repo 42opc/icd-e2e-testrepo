@@ -448,3 +448,21 @@ expert_roster:
     source: ai_inferred_teacher_confirmed
 roster_version: 1
 roster_hash: aa279a0eb73dd5784332fedfb2bcc8ac88057f2729649207a2800f2d8cd3cc21
+step_0_summary:
+  completed_at: "2026-05-28"
+  theme_direction: 校园雨水花园(真实问题情境:学校希望在校园建一个雨水花园)
+  subjects:
+    - 科学
+    - 数学
+    - 综合实践活动
+  class_grade: 二年级
+  school: 朝阳实验小学
+  expert_roster_version: 1
+  expert_roster_domain_count: 4
+  expert_roster_subject_count: 3
+  sub_steps_done:
+    - "0.0"
+    - "0.1"
+    - "0.2"
+    - "0.3"
+    - "0.4"
