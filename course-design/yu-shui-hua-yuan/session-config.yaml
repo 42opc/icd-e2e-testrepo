@@ -3,12 +3,10 @@ project:
   slug: yu-shui-hua-yuan
   grade: 二年级
   school: 朝阳实验小学
-
 theme_direction: 校园雨水花园(真实问题情境:学校希望在校园建一个雨水花园)
 subjects:
-  - 科学
-  - 数学
-
+- 科学
+- 数学
 class_info:
   student_count:
     value: 32
@@ -17,103 +15,98 @@ class_info:
     value: 16
     source: teacher_input
   lesson_count:
-    value: "每周 1 节,8 周完成"
+    value: 每周 1 节,8 周完成
     source: teacher_input
   budget:
-    value: "2000 元"
+    value: 2000 元
     source: teacher_input
   school_special:
-    value: "必须在校园内完成,期末展示面向全校师生开放"
+    value: 必须在校园内完成,期末展示面向全校师生开放
     source: teacher_input
   prior_knowledge:
-    value: "水的循环 / 物质变化基础认知"
+    value: 水的循环 / 物质变化基础认知
     source: ai_inferred_teacher_confirmed
-    inference_basis: "2022 年版科学课标 P.45 §自然现象观察"
+    inference_basis: 2022 年版科学课标 P.45 §自然现象观察
   classroom_type:
-    value: "普通教室 + 校园户外活动区"
+    value: 普通教室 + 校园户外活动区
     source: ai_inferred_teacher_confirmed
-    inference_basis: "2022 年版科学课标 P.78 实施建议"
+    inference_basis: 2022 年版科学课标 P.78 实施建议
   typical_equipment:
-    value: "简单测量工具 + 雨水收集容器 + 记录本"
+    value: 简单测量工具 + 雨水收集容器 + 记录本
     source: ai_inferred_teacher_confirmed
-    inference_basis: "2022 年版科学课标 P.92 §课程资源"
-
-expert_roster_draft:
+    inference_basis: 2022 年版科学课标 P.92 §课程资源
+expert_roster:
   domain_experts:
-    - role: 生态水文学研究员
-      perspective: 从雨水生态系统与水文循环视角审视课程设计
-      thinking_style: 系统性 + 数据驱动
-      personality: 严谨、深度
-      working_style: 基于实证研究提供建议
-      participation: core
-      source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.cnki.net/research/ecology-hydrology-primary-education"
-
-    - role: 城市生态设计师
-      perspective: 从可持续城市设计与绿色基础设施视角提供指导
-      thinking_style: 跨学科 + 实践导向
-      personality: 创新、务实
-      working_style: 以真实项目案例辅助教学设计
-      participation: core
-      source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.sciencedirect.com/urban-ecology-education-design"
-
-    - role: 小学科学教育研究者
-      perspective: 从儿童认知发展与探究式学习视角优化课程逻辑
-      thinking_style: 发展心理学 + 课程论
-      personality: 耐心、细致
-      working_style: 以学习理论框架支撑教学设计
-      participation: core
-      source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.edu.cn/primary-science-inquiry-research"
-
-    - role: 环境工程师
-      perspective: 从工程实践与环境影响评估视角支持项目可行性
-      thinking_style: 工程思维 + 问题解决
-      personality: 踏实、目标导向
-      working_style: 提供技术可行性分析与安全评估
-      participation: crossover
-      source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.environmental-engineering-edu.org/primary-stem"
-
+  - role: 生态水文学研究员
+    perspective: 从雨水生态系统与水文循环视角审视课程设计
+    thinking_style: 系统性 + 数据驱动
+    personality: 严谨、深度
+    working_style: 基于实证研究提供建议
+    participation: core
+    source: ai_inferred_teacher_confirmed
+    inference_basis: https://www.cnki.net/research/ecology-hydrology-primary-education
+  - role: 城市生态设计师
+    perspective: 从可持续城市设计与绿色基础设施视角提供指导
+    thinking_style: 跨学科 + 实践导向
+    personality: 创新、务实
+    working_style: 以真实项目案例辅助教学设计
+    participation: core
+    source: ai_inferred_teacher_confirmed
+    inference_basis: https://www.sciencedirect.com/urban-ecology-education-design
+  - role: 小学科学教育研究者
+    perspective: 从儿童认知发展与探究式学习视角优化课程逻辑
+    thinking_style: 发展心理学 + 课程论
+    personality: 耐心、细致
+    working_style: 以学习理论框架支撑教学设计
+    participation: core
+    source: ai_inferred_teacher_confirmed
+    inference_basis: https://www.edu.cn/primary-science-inquiry-research
+  - role: 环境工程师
+    perspective: 从工程实践与环境影响评估视角支持项目可行性
+    thinking_style: 工程思维 + 问题解决
+    personality: 踏实、目标导向
+    working_style: 提供技术可行性分析与安全评估
+    participation: crossover
+    source: ai_inferred_teacher_confirmed
+    inference_basis: https://www.environmental-engineering-edu.org/primary-stem
   subject_teachers:
-    - subject: 科学
-      grade: 二年级
-      integration_level: L2
-      core_competencies:
-        - 科学探究
-        - 生命科学
-        - 地球与宇宙
-      spawn_prompt: >
-        你是二年级科学学科专家教师,重点关注科学探究能力培养。
-        inference_basis: 2022 版小学科学课标 P.12 核心素养框架
-        请审查本单元设计是否符合二年级学生认知发展水平。
-      source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/science-curriculum-2022"
+  - subject: 科学
+    grade: 二年级
+    integration_level: L2
+    core_competencies:
+    - 科学探究
+    - 生命科学
+    - 地球与宇宙
+    spawn_prompt: '你是二年级科学学科专家教师,重点关注科学探究能力培养。 inference_basis: 2022 版小学科学课标 P.12
+      核心素养框架 请审查本单元设计是否符合二年级学生认知发展水平。
 
-    - subject: 数学
-      grade: 二年级
-      integration_level: L1
-      core_competencies:
-        - 数据分析
-        - 量感与测量
-      spawn_prompt: >
-        你是二年级数学学科专家教师,重点关注数学与实际情境的整合。
-        inference_basis: 2022 版小学数学课标 P.8 量感核心概念
-        请评估雨水花园项目中的测量与数据收集活动是否适合二年级学生。
-      source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/math-curriculum-2022"
+      '
+    source: ai_inferred_teacher_confirmed
+    inference_basis: https://www.moe.gov.cn/science-curriculum-2022
+  - subject: 数学
+    grade: 二年级
+    integration_level: L1
+    core_competencies:
+    - 数据分析
+    - 量感与测量
+    spawn_prompt: '你是二年级数学学科专家教师,重点关注数学与实际情境的整合。 inference_basis: 2022 版小学数学课标 P.8
+      量感核心概念 请评估雨水花园项目中的测量与数据收集活动是否适合二年级学生。
 
-    - subject: 综合实践活动
-      grade: 二年级
-      integration_level: L2
-      core_competencies:
-        - 考察探究
-        - 社会服务
-        - 设计制作
-      spawn_prompt: >
-        你是综合实践活动学科专家教师,专注于真实情境中的项目式学习。
-        inference_basis: 2017 版综合实践活动课程指南 P.15 探究活动设计
-        请审查项目中学生动手实践与社区联系的设计是否合理。
-      source: ai_inferred_teacher_confirmed
-      inference_basis: "https://www.moe.gov.cn/comprehensive-practice-guide-2017"
+      '
+    source: ai_inferred_teacher_confirmed
+    inference_basis: https://www.moe.gov.cn/math-curriculum-2022
+  - subject: 综合实践活动
+    grade: 二年级
+    integration_level: L2
+    core_competencies:
+    - 考察探究
+    - 社会服务
+    - 设计制作
+    spawn_prompt: '你是综合实践活动学科专家教师,专注于真实情境中的项目式学习。 inference_basis: 2017 版综合实践活动课程指南
+      P.15 探究活动设计 请审查项目中学生动手实践与社区联系的设计是否合理。
+
+      '
+    source: ai_inferred_teacher_confirmed
+    inference_basis: https://www.moe.gov.cn/comprehensive-practice-guide-2017
+roster_version: 1
+roster_hash: fixture-0.4-done
